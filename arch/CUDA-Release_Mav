@@ -1,0 +1,16 @@
+#! /usr/bin/env bash
+
+# Get the path to the project from which this script was called
+src_dir="${0%/*}/.."
+
+# Call CMake command for a CPU build with Skylake architecture (compatible with Cascade Lake)
+CXX=$src_dir/kokkos/bin/nvcc_wrapper cmake \
+  -DCMAKE_BUILD_TYPE=Release \
+  -DENABLE_INTEGRATED_TESTS=ON \
+  -DENABLE_UNIT_TESTS=ON \
+  -DBUILD_INTERNAL_KOKKOS=ON \
+  -DENABLE_KOKKOS_CUDA=OFF \
+  -DENABLE_KOKKOS_OPENMP=ON \
+  -DKokkos_ARCH_SKX=ON \
+  -DCMAKE_CXX_FLAGS="-rdynamic" \
+  $src_dir
