@@ -1,0 +1,1079 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cmake-3.27.9-diliyi6mvc2vlwxymv4hbpu5s4bf6prb/share/cmake-3.27/Modules/CMakeDetermineSystem.cmake:211 (message)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      The system is: Linux - 5.4.0-144-generic - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cmake-3.27.9-diliyi6mvc2vlwxymv4hbpu5s4bf6prb/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cmake-3.27.9-diliyi6mvc2vlwxymv4hbpu5s4bf6prb/share/cmake-3.27/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cmake-3.27.9-diliyi6mvc2vlwxymv4hbpu5s4bf6prb/share/cmake-3.27/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /home1/mberkland2023/repos/vpic-kokkos/kokkos/bin/nvcc_wrapper 
+      Build flags: -rdynamic
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home1/mberkland2023/repos/vpic-kokkos/build/CMakeFiles/3.27.9/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cmake-3.27.9-diliyi6mvc2vlwxymv4hbpu5s4bf6prb/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cmake-3.27.9-diliyi6mvc2vlwxymv4hbpu5s4bf6prb/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:13 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home1/mberkland2023/repos/vpic-kokkos/build/CMakeFiles/CMakeScratch/TryCompile-CzJq5l"
+      binary: "/home1/mberkland2023/repos/vpic-kokkos/build/CMakeFiles/CMakeScratch/TryCompile-CzJq5l"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-rdynamic"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home1/mberkland2023/repos/vpic-kokkos/build/CMakeFiles/CMakeScratch/TryCompile-CzJq5l'
+        
+        Run Build Command(s): /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cmake-3.27.9-diliyi6mvc2vlwxymv4hbpu5s4bf6prb/bin/cmake -E env VERBOSE=1 /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/gmake-4.4.1-uzwq3guww5xehopkcxw6ywjluksqk5c6/bin/gmake -f Makefile cmTC_2d51f/fast
+        /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/gmake-4.4.1-uzwq3guww5xehopkcxw6ywjluksqk5c6/bin/gmake  -f CMakeFiles/cmTC_2d51f.dir/build.make CMakeFiles/cmTC_2d51f.dir/build
+        gmake[1]: Entering directory '/home1/mberkland2023/repos/vpic-kokkos/build/CMakeFiles/CMakeScratch/TryCompile-CzJq5l'
+        Building CXX object CMakeFiles/cmTC_2d51f.dir/CMakeCXXCompilerABI.cpp.o
+        /home1/mberkland2023/repos/vpic-kokkos/kokkos/bin/nvcc_wrapper   -rdynamic    -v -o CMakeFiles/cmTC_2d51f.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cmake-3.27.9-diliyi6mvc2vlwxymv4hbpu5s4bf6prb/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=g++
+        OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+        Thread model: posix
+        gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
+        COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH_LIST__=700' '-E' '-D' '__CUDACC__' '-D' '__NVCC__' '-rdynamic' '-v' '-I' '/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=3' '-D' '__CUDACC_VER_BUILD__=52' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=3' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_002d99ae_00000000-5_CMakeCXXCompilerABI.cpp4.ii' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -E -quiet -v -I /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include -imultiarch x86_64-linux-gnu -D_GNU_SOURCE -D __CUDA_ARCH_LIST__=700 -D __CUDACC__ -D __NVCC__ -D __CUDACC_VER_MAJOR__=12 -D __CUDACC_VER_MINOR__=3 -D __CUDACC_VER_BUILD__=52 -D __CUDA_API_VER_MAJOR__=12 -D __CUDA_API_VER_MINOR__=3 -D __NVCC_DIAG_PRAGMA_SUPPORT__=1 -include cuda_runtime.h /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cmake-3.27.9-diliyi6mvc2vlwxymv4hbpu5s4bf6prb/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp -o /tmp/tmpxft_002d99ae_00000000-5_CMakeCXXCompilerABI.cpp4.ii -m64 -mtune=generic -march=x86-64 -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection
+        ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/9"
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include
+         /usr/include/c++/9
+         /usr/include/x86_64-linux-gnu/c++/9
+         /usr/include/c++/9/backward
+         /usr/lib/gcc/x86_64-linux-gnu/9/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH_LIST__=700' '-E' '-D' '__CUDACC__' '-D' '__NVCC__' '-rdynamic' '-v' '-I' '/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=3' '-D' '__CUDACC_VER_BUILD__=52' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=3' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_002d99ae_00000000-5_CMakeCXXCompilerABI.cpp4.ii' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+        Using built-in specs.
+        COLLECT_GCC=g++
+        OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+        Thread model: posix
+        gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
+        COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=700' '-D' '__CUDA_ARCH_LIST__=700' '-E' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-D' '__CUDACC__' '-D' '__NVCC__' '-rdynamic' '-v' '-I' '/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=3' '-D' '__CUDACC_VER_BUILD__=52' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=3' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_002d99ae_00000000-7_CMakeCXXCompilerABI.cpp1.ii' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -E -quiet -v -I /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include -imultiarch x86_64-linux-gnu -D_GNU_SOURCE -D __CUDA_ARCH__=700 -D __CUDA_ARCH_LIST__=700 -D CUDA_DOUBLE_MATH_FUNCTIONS -D __CUDACC__ -D __NVCC__ -D __CUDACC_VER_MAJOR__=12 -D __CUDACC_VER_MINOR__=3 -D __CUDACC_VER_BUILD__=52 -D __CUDA_API_VER_MAJOR__=12 -D __CUDA_API_VER_MINOR__=3 -D __NVCC_DIAG_PRAGMA_SUPPORT__=1 -include cuda_runtime.h /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cmake-3.27.9-diliyi6mvc2vlwxymv4hbpu5s4bf6prb/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp -o /tmp/tmpxft_002d99ae_00000000-7_CMakeCXXCompilerABI.cpp1.ii -m64 -mtune=generic -march=x86-64 -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection
+        ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/9"
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include
+         /usr/include/c++/9
+         /usr/include/x86_64-linux-gnu/c++/9
+         /usr/include/c++/9/backward
+         /usr/lib/gcc/x86_64-linux-gnu/9/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=700' '-D' '__CUDA_ARCH_LIST__=700' '-E' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-D' '__CUDACC__' '-D' '__NVCC__' '-rdynamic' '-v' '-I' '/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=3' '-D' '__CUDACC_VER_BUILD__=52' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=3' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_002d99ae_00000000-7_CMakeCXXCompilerABI.cpp1.ii' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+        Using built-in specs.
+        COLLECT_GCC=g++
+        OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+        Thread model: posix
+        gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
+        COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=700' '-D' '__CUDA_ARCH_LIST__=700' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-rdynamic' '-v' '-I' '/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_2d51f.dir/CMakeCXXCompilerABI.cpp.o' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -I /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include -imultiarch x86_64-linux-gnu -D_GNU_SOURCE -D __CUDA_ARCH__=700 -D __CUDA_ARCH_LIST__=700 -D CUDA_DOUBLE_MATH_FUNCTIONS /tmp/tmpxft_002d99ae_00000000-6_CMakeCXXCompilerABI.cudafe1.cpp -quiet -dumpbase tmpxft_002d99ae_00000000-6_CMakeCXXCompilerABI.cudafe1.cpp -m64 -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_2d51f.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cceyr8kw.s
+        GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/9"
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include
+         /usr/include/c++/9
+         /usr/include/x86_64-linux-gnu/c++/9
+         /usr/include/c++/9/backward
+         /usr/lib/gcc/x86_64-linux-gnu/9/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 3d1eba838554fa2348dba760e4770469
+        COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=700' '-D' '__CUDA_ARCH_LIST__=700' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-rdynamic' '-v' '-I' '/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_2d51f.dir/CMakeCXXCompilerABI.cpp.o' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         as -v -I /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include --64 -o CMakeFiles/cmTC_2d51f.dir/CMakeCXXCompilerABI.cpp.o /tmp/cceyr8kw.s
+        GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34
+        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=700' '-D' '__CUDA_ARCH_LIST__=700' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-rdynamic' '-v' '-I' '/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_2d51f.dir/CMakeCXXCompilerABI.cpp.o' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+        Linking CXX executable cmTC_2d51f
+        /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cmake-3.27.9-diliyi6mvc2vlwxymv4hbpu5s4bf6prb/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2d51f.dir/link.txt --verbose=1
+        /home1/mberkland2023/repos/vpic-kokkos/kokkos/bin/nvcc_wrapper -rdynamic   -v CMakeFiles/cmTC_2d51f.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_2d51f 
+        Using built-in specs.
+        COLLECT_GCC=g++
+        OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+        Thread model: posix
+        gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
+        COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH_LIST__=700' '-c' '-D' 'FATBINFILE="/tmp/tmpxft_002d99c5_00000000-4_cmTC_2d51f_dlink.fatbin.c"' '-D' 'REGISTERLINKBINARYFILE="/tmp/tmpxft_002d99c5_00000000-3_cmTC_2d51f_dlink.reg.c"' '-I' '.' '-D' '__NV_EXTRA_INITIALIZATION=' '-D' '__NV_EXTRA_FINALIZATION=' '-D' '__CUDA_INCLUDE_COMPILER_INTERNAL_HEADERS__' '-rdynamic' '-v' '-I' '/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=3' '-D' '__CUDACC_VER_BUILD__=52' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=3' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-m64' '-o' '/tmp/tmpxft_002d99c5_00000000-6_cmTC_2d51f_dlink.o' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -I . -I /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include -imultiarch x86_64-linux-gnu -D_GNU_SOURCE -D __CUDA_ARCH_LIST__=700 -D FATBINFILE="/tmp/tmpxft_002d99c5_00000000-4_cmTC_2d51f_dlink.fatbin.c" -D REGISTERLINKBINARYFILE="/tmp/tmpxft_002d99c5_00000000-3_cmTC_2d51f_dlink.reg.c" -D __NV_EXTRA_INITIALIZATION= -D __NV_EXTRA_FINALIZATION= -D __CUDA_INCLUDE_COMPILER_INTERNAL_HEADERS__ -D __CUDACC_VER_MAJOR__=12 -D __CUDACC_VER_MINOR__=3 -D __CUDACC_VER_BUILD__=52 -D __CUDA_API_VER_MAJOR__=12 -D __CUDA_API_VER_MINOR__=3 -D __NVCC_DIAG_PRAGMA_SUPPORT__=1 /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/crt/link.stub -quiet -dumpbase link.stub -m64 -mtune=generic -march=x86-64 -auxbase-strip /tmp/tmpxft_002d99c5_00000000-6_cmTC_2d51f_dlink.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccTvcZTM.s
+        GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/9"
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         .
+         /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include
+         /usr/include/c++/9
+         /usr/include/x86_64-linux-gnu/c++/9
+         /usr/include/c++/9/backward
+         /usr/lib/gcc/x86_64-linux-gnu/9/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 3d1eba838554fa2348dba760e4770469
+        COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH_LIST__=700' '-c' '-D' 'FATBINFILE="/tmp/tmpxft_002d99c5_00000000-4_cmTC_2d51f_dlink.fatbin.c"' '-D' 'REGISTERLINKBINARYFILE="/tmp/tmpxft_002d99c5_00000000-3_cmTC_2d51f_dlink.reg.c"' '-I' '.' '-D' '__NV_EXTRA_INITIALIZATION=' '-D' '__NV_EXTRA_FINALIZATION=' '-D' '__CUDA_INCLUDE_COMPILER_INTERNAL_HEADERS__' '-rdynamic' '-v' '-I' '/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=3' '-D' '__CUDACC_VER_BUILD__=52' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=3' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-m64' '-o' '/tmp/tmpxft_002d99c5_00000000-6_cmTC_2d51f_dlink.o' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         as -v -I . -I /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include --64 -o /tmp/tmpxft_002d99c5_00000000-6_cmTC_2d51f_dlink.o /tmp/ccTvcZTM.s
+        GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34
+        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH_LIST__=700' '-c' '-D' 'FATBINFILE="/tmp/tmpxft_002d99c5_00000000-4_cmTC_2d51f_dlink.fatbin.c"' '-D' 'REGISTERLINKBINARYFILE="/tmp/tmpxft_002d99c5_00000000-3_cmTC_2d51f_dlink.reg.c"' '-I' '.' '-D' '__NV_EXTRA_INITIALIZATION=' '-D' '__NV_EXTRA_FINALIZATION=' '-D' '__CUDA_INCLUDE_COMPILER_INTERNAL_HEADERS__' '-rdynamic' '-v' '-I' '/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=3' '-D' '__CUDACC_VER_BUILD__=52' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=3' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-m64' '-o' '/tmp/tmpxft_002d99c5_00000000-6_cmTC_2d51f_dlink.o' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+        Using built-in specs.
+        COLLECT_GCC=g++
+        COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+        Thread model: posix
+        gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
+        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH_LIST__=700' '-rdynamic' '-v' '-m64' '-L/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/lib/stubs' '-L/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/lib' '-o' 'cmTC_2d51f' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+         /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccecc782.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_2d51f /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/lib/stubs -L/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/lib -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. --start-group /tmp/tmpxft_002d99c5_00000000-6_cmTC_2d51f_dlink.o CMakeFiles/cmTC_2d51f.dir/CMakeCXXCompilerABI.cpp.o -lcudadevrt -lcudart_static -lrt -lpthread -ldl --end-group -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+        COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH_LIST__=700' '-rdynamic' '-v' '-m64' '-L/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/lib/stubs' '-L/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/lib' '-o' 'cmTC_2d51f' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+        gmake[1]: Leaving directory '/home1/mberkland2023/repos/vpic-kokkos/build/CMakeFiles/CMakeScratch/TryCompile-CzJq5l'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cmake-3.27.9-diliyi6mvc2vlwxymv4hbpu5s4bf6prb/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cmake-3.27.9-diliyi6mvc2vlwxymv4hbpu5s4bf6prb/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include]
+          add: [/usr/include/c++/9]
+          add: [/usr/include/x86_64-linux-gnu/c++/9]
+          add: [/usr/include/c++/9/backward]
+          add: [/usr/lib/gcc/x86_64-linux-gnu/9/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include] ==> [/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/targets/x86_64-linux/include]
+        collapse include dir [/usr/include/c++/9] ==> [/usr/include/c++/9]
+        collapse include dir [/usr/include/x86_64-linux-gnu/c++/9] ==> [/usr/include/x86_64-linux-gnu/c++/9]
+        collapse include dir [/usr/include/c++/9/backward] ==> [/usr/include/c++/9/backward]
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/9/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/9/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/targets/x86_64-linux/include;/usr/include/c++/9;/usr/include/x86_64-linux-gnu/c++/9;/usr/include/c++/9/backward;/usr/lib/gcc/x86_64-linux-gnu/9/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cmake-3.27.9-diliyi6mvc2vlwxymv4hbpu5s4bf6prb/share/cmake-3.27/Modules/CMakeDetermineCompilerABI.cmake:152 (message)"
+      - "/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cmake-3.27.9-diliyi6mvc2vlwxymv4hbpu5s4bf6prb/share/cmake-3.27/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:13 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home1/mberkland2023/repos/vpic-kokkos/build/CMakeFiles/CMakeScratch/TryCompile-CzJq5l']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cmake-3.27.9-diliyi6mvc2vlwxymv4hbpu5s4bf6prb/bin/cmake -E env VERBOSE=1 /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/gmake-4.4.1-uzwq3guww5xehopkcxw6ywjluksqk5c6/bin/gmake -f Makefile cmTC_2d51f/fast]
+        ignore line: [/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/gmake-4.4.1-uzwq3guww5xehopkcxw6ywjluksqk5c6/bin/gmake  -f CMakeFiles/cmTC_2d51f.dir/build.make CMakeFiles/cmTC_2d51f.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home1/mberkland2023/repos/vpic-kokkos/build/CMakeFiles/CMakeScratch/TryCompile-CzJq5l']
+        ignore line: [Building CXX object CMakeFiles/cmTC_2d51f.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/home1/mberkland2023/repos/vpic-kokkos/kokkos/bin/nvcc_wrapper   -rdynamic    -v -o CMakeFiles/cmTC_2d51f.dir/CMakeCXXCompilerABI.cpp.o -c /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cmake-3.27.9-diliyi6mvc2vlwxymv4hbpu5s4bf6prb/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=g++]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH_LIST__=700' '-E' '-D' '__CUDACC__' '-D' '__NVCC__' '-rdynamic' '-v' '-I' '/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=3' '-D' '__CUDACC_VER_BUILD__=52' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=3' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_002d99ae_00000000-5_CMakeCXXCompilerABI.cpp4.ii' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -E -quiet -v -I /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include -imultiarch x86_64-linux-gnu -D_GNU_SOURCE -D __CUDA_ARCH_LIST__=700 -D __CUDACC__ -D __NVCC__ -D __CUDACC_VER_MAJOR__=12 -D __CUDACC_VER_MINOR__=3 -D __CUDACC_VER_BUILD__=52 -D __CUDA_API_VER_MAJOR__=12 -D __CUDA_API_VER_MINOR__=3 -D __NVCC_DIAG_PRAGMA_SUPPORT__=1 -include cuda_runtime.h /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cmake-3.27.9-diliyi6mvc2vlwxymv4hbpu5s4bf6prb/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp -o /tmp/tmpxft_002d99ae_00000000-5_CMakeCXXCompilerABI.cpp4.ii -m64 -mtune=generic -march=x86-64 -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection]
+        ignore line: [ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/9"]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include]
+        ignore line: [ /usr/include/c++/9]
+        ignore line: [ /usr/include/x86_64-linux-gnu/c++/9]
+        ignore line: [ /usr/include/c++/9/backward]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH_LIST__=700' '-E' '-D' '__CUDACC__' '-D' '__NVCC__' '-rdynamic' '-v' '-I' '/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=3' '-D' '__CUDACC_VER_BUILD__=52' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=3' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_002d99ae_00000000-5_CMakeCXXCompilerABI.cpp4.ii' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=g++]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=700' '-D' '__CUDA_ARCH_LIST__=700' '-E' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-D' '__CUDACC__' '-D' '__NVCC__' '-rdynamic' '-v' '-I' '/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=3' '-D' '__CUDACC_VER_BUILD__=52' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=3' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_002d99ae_00000000-7_CMakeCXXCompilerABI.cpp1.ii' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -E -quiet -v -I /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include -imultiarch x86_64-linux-gnu -D_GNU_SOURCE -D __CUDA_ARCH__=700 -D __CUDA_ARCH_LIST__=700 -D CUDA_DOUBLE_MATH_FUNCTIONS -D __CUDACC__ -D __NVCC__ -D __CUDACC_VER_MAJOR__=12 -D __CUDACC_VER_MINOR__=3 -D __CUDACC_VER_BUILD__=52 -D __CUDA_API_VER_MAJOR__=12 -D __CUDA_API_VER_MINOR__=3 -D __NVCC_DIAG_PRAGMA_SUPPORT__=1 -include cuda_runtime.h /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cmake-3.27.9-diliyi6mvc2vlwxymv4hbpu5s4bf6prb/share/cmake-3.27/Modules/CMakeCXXCompilerABI.cpp -o /tmp/tmpxft_002d99ae_00000000-7_CMakeCXXCompilerABI.cpp1.ii -m64 -mtune=generic -march=x86-64 -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection]
+        ignore line: [ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/9"]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include]
+        ignore line: [ /usr/include/c++/9]
+        ignore line: [ /usr/include/x86_64-linux-gnu/c++/9]
+        ignore line: [ /usr/include/c++/9/backward]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=700' '-D' '__CUDA_ARCH_LIST__=700' '-E' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-D' '__CUDACC__' '-D' '__NVCC__' '-rdynamic' '-v' '-I' '/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=3' '-D' '__CUDACC_VER_BUILD__=52' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=3' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_002d99ae_00000000-7_CMakeCXXCompilerABI.cpp1.ii' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=g++]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=700' '-D' '__CUDA_ARCH_LIST__=700' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-rdynamic' '-v' '-I' '/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_2d51f.dir/CMakeCXXCompilerABI.cpp.o' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -I /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include -imultiarch x86_64-linux-gnu -D_GNU_SOURCE -D __CUDA_ARCH__=700 -D __CUDA_ARCH_LIST__=700 -D CUDA_DOUBLE_MATH_FUNCTIONS /tmp/tmpxft_002d99ae_00000000-6_CMakeCXXCompilerABI.cudafe1.cpp -quiet -dumpbase tmpxft_002d99ae_00000000-6_CMakeCXXCompilerABI.cudafe1.cpp -m64 -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_2d51f.dir/CMakeCXXCompilerABI.cpp.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cceyr8kw.s]
+        ignore line: [GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/9"]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include]
+        ignore line: [ /usr/include/c++/9]
+        ignore line: [ /usr/include/x86_64-linux-gnu/c++/9]
+        ignore line: [ /usr/include/c++/9/backward]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 3d1eba838554fa2348dba760e4770469]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=700' '-D' '__CUDA_ARCH_LIST__=700' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-rdynamic' '-v' '-I' '/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_2d51f.dir/CMakeCXXCompilerABI.cpp.o' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [ as -v -I /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include --64 -o CMakeFiles/cmTC_2d51f.dir/CMakeCXXCompilerABI.cpp.o /tmp/cceyr8kw.s]
+        ignore line: [GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH__=700' '-D' '__CUDA_ARCH_LIST__=700' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-rdynamic' '-v' '-I' '/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_2d51f.dir/CMakeCXXCompilerABI.cpp.o' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [Linking CXX executable cmTC_2d51f]
+        ignore line: [/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cmake-3.27.9-diliyi6mvc2vlwxymv4hbpu5s4bf6prb/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2d51f.dir/link.txt --verbose=1]
+        ignore line: [/home1/mberkland2023/repos/vpic-kokkos/kokkos/bin/nvcc_wrapper -rdynamic   -v CMakeFiles/cmTC_2d51f.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_2d51f ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=g++]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH_LIST__=700' '-c' '-D' 'FATBINFILE="/tmp/tmpxft_002d99c5_00000000-4_cmTC_2d51f_dlink.fatbin.c"' '-D' 'REGISTERLINKBINARYFILE="/tmp/tmpxft_002d99c5_00000000-3_cmTC_2d51f_dlink.reg.c"' '-I' '.' '-D' '__NV_EXTRA_INITIALIZATION=' '-D' '__NV_EXTRA_FINALIZATION=' '-D' '__CUDA_INCLUDE_COMPILER_INTERNAL_HEADERS__' '-rdynamic' '-v' '-I' '/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=3' '-D' '__CUDACC_VER_BUILD__=52' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=3' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-m64' '-o' '/tmp/tmpxft_002d99c5_00000000-6_cmTC_2d51f_dlink.o' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -I . -I /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include -imultiarch x86_64-linux-gnu -D_GNU_SOURCE -D __CUDA_ARCH_LIST__=700 -D FATBINFILE="/tmp/tmpxft_002d99c5_00000000-4_cmTC_2d51f_dlink.fatbin.c" -D REGISTERLINKBINARYFILE="/tmp/tmpxft_002d99c5_00000000-3_cmTC_2d51f_dlink.reg.c" -D __NV_EXTRA_INITIALIZATION= -D __NV_EXTRA_FINALIZATION= -D __CUDA_INCLUDE_COMPILER_INTERNAL_HEADERS__ -D __CUDACC_VER_MAJOR__=12 -D __CUDACC_VER_MINOR__=3 -D __CUDACC_VER_BUILD__=52 -D __CUDA_API_VER_MAJOR__=12 -D __CUDA_API_VER_MINOR__=3 -D __NVCC_DIAG_PRAGMA_SUPPORT__=1 /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/crt/link.stub -quiet -dumpbase link.stub -m64 -mtune=generic -march=x86-64 -auxbase-strip /tmp/tmpxft_002d99c5_00000000-6_cmTC_2d51f_dlink.o -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccTvcZTM.s]
+        ignore line: [GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/9"]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ .]
+        ignore line: [ /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include]
+        ignore line: [ /usr/include/c++/9]
+        ignore line: [ /usr/include/x86_64-linux-gnu/c++/9]
+        ignore line: [ /usr/include/c++/9/backward]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 3d1eba838554fa2348dba760e4770469]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH_LIST__=700' '-c' '-D' 'FATBINFILE="/tmp/tmpxft_002d99c5_00000000-4_cmTC_2d51f_dlink.fatbin.c"' '-D' 'REGISTERLINKBINARYFILE="/tmp/tmpxft_002d99c5_00000000-3_cmTC_2d51f_dlink.reg.c"' '-I' '.' '-D' '__NV_EXTRA_INITIALIZATION=' '-D' '__NV_EXTRA_FINALIZATION=' '-D' '__CUDA_INCLUDE_COMPILER_INTERNAL_HEADERS__' '-rdynamic' '-v' '-I' '/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=3' '-D' '__CUDACC_VER_BUILD__=52' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=3' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-m64' '-o' '/tmp/tmpxft_002d99c5_00000000-6_cmTC_2d51f_dlink.o' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [ as -v -I . -I /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include --64 -o /tmp/tmpxft_002d99c5_00000000-6_cmTC_2d51f_dlink.o /tmp/ccTvcZTM.s]
+        ignore line: [GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH_LIST__=700' '-c' '-D' 'FATBINFILE="/tmp/tmpxft_002d99c5_00000000-4_cmTC_2d51f_dlink.fatbin.c"' '-D' 'REGISTERLINKBINARYFILE="/tmp/tmpxft_002d99c5_00000000-3_cmTC_2d51f_dlink.reg.c"' '-I' '.' '-D' '__NV_EXTRA_INITIALIZATION=' '-D' '__NV_EXTRA_FINALIZATION=' '-D' '__CUDA_INCLUDE_COMPILER_INTERNAL_HEADERS__' '-rdynamic' '-v' '-I' '/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=3' '-D' '__CUDACC_VER_BUILD__=52' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=3' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-m64' '-o' '/tmp/tmpxft_002d99c5_00000000-6_cmTC_2d51f_dlink.o' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=g++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH_LIST__=700' '-rdynamic' '-v' '-m64' '-L/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/lib/stubs' '-L/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/lib' '-o' 'cmTC_2d51f' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccecc782.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_2d51f /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o -L/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/lib/stubs -L/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/lib -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. --start-group /tmp/tmpxft_002d99c5_00000000-6_cmTC_2d51f_dlink.o CMakeFiles/cmTC_2d51f.dir/CMakeCXXCompilerABI.cpp.o -lcudadevrt -lcudart_static -lrt -lpthread -ldl --end-group -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccecc782.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-export-dynamic] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_2d51f] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o]
+          arg [-L/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/lib/stubs] ==> dir [/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/lib/stubs]
+          arg [-L/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/lib] ==> dir [/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/9] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..]
+          arg [--start-group] ==> ignore
+          arg [/tmp/tmpxft_002d99c5_00000000-6_cmTC_2d51f_dlink.o] ==> obj [/tmp/tmpxft_002d99c5_00000000-6_cmTC_2d51f_dlink.o]
+          arg [CMakeFiles/cmTC_2d51f.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lcudadevrt] ==> lib [cudadevrt]
+          arg [-lcudart_static] ==> lib [cudart_static]
+          arg [-lrt] ==> lib [rt]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-ldl] ==> lib [dl]
+          arg [--end-group] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+        collapse obj [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+        collapse library dir [/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/lib/stubs] ==> [/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/targets/x86_64-linux/lib/stubs]
+        collapse library dir [/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/lib] ==> [/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/targets/x86_64-linux/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9] ==> [/usr/lib/gcc/x86_64-linux-gnu/9]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> [/usr/lib]
+        implicit libs: [cudadevrt;cudart_static;rt;pthread;dl;stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o;/tmp/tmpxft_002d99c5_00000000-6_cmTC_2d51f_dlink.o;/usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/targets/x86_64-linux/lib/stubs;/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/targets/x86_64-linux/lib;/usr/lib/gcc/x86_64-linux-gnu/9;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cmake-3.27.9-diliyi6mvc2vlwxymv4hbpu5s4bf6prb/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cmake-3.27.9-diliyi6mvc2vlwxymv4hbpu5s4bf6prb/share/cmake-3.27/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cmake-3.27.9-diliyi6mvc2vlwxymv4hbpu5s4bf6prb/share/cmake-3.27/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "CMakeLists.txt:34 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode normal"
+    directories:
+      source: "/home1/mberkland2023/repos/vpic-kokkos/build/CMakeFiles/CMakeScratch/TryCompile-Vzw3Am"
+      binary: "/home1/mberkland2023/repos/vpic-kokkos/build/CMakeFiles/CMakeScratch/TryCompile-Vzw3Am"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-rdynamic"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home1/mberkland2023/repos/vpic-kokkos/build/CMakeFiles/CMakeScratch/TryCompile-Vzw3Am'
+        
+        Run Build Command(s): /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cmake-3.27.9-diliyi6mvc2vlwxymv4hbpu5s4bf6prb/bin/cmake -E env VERBOSE=1 /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/gmake-4.4.1-uzwq3guww5xehopkcxw6ywjluksqk5c6/bin/gmake -f Makefile cmTC_e990e/fast
+        /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/gmake-4.4.1-uzwq3guww5xehopkcxw6ywjluksqk5c6/bin/gmake  -f CMakeFiles/cmTC_e990e.dir/build.make CMakeFiles/cmTC_e990e.dir/build
+        gmake[1]: Entering directory '/home1/mberkland2023/repos/vpic-kokkos/build/CMakeFiles/CMakeScratch/TryCompile-Vzw3Am'
+        Building CXX object CMakeFiles/cmTC_e990e.dir/test_mpi.cpp.o
+        /home1/mberkland2023/repos/vpic-kokkos/kokkos/bin/nvcc_wrapper  -isystem /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/openmpi-4.1.1-ltmwwysjjowof4zsojcmq54r5qqzgty6/include -rdynamic  -std=gnu++17 -pthread -o CMakeFiles/cmTC_e990e.dir/test_mpi.cpp.o -c /home1/mberkland2023/repos/vpic-kokkos/build/CMakeFiles/CMakeScratch/TryCompile-Vzw3Am/test_mpi.cpp
+        nvcc_wrapper has been given GNU extension standard flag -std=gnu++17 - reverting flag to -std=c++17
+        Linking CXX executable cmTC_e990e
+        /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cmake-3.27.9-diliyi6mvc2vlwxymv4hbpu5s4bf6prb/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e990e.dir/link.txt --verbose=1
+        /home1/mberkland2023/repos/vpic-kokkos/kokkos/bin/nvcc_wrapper -rdynamic  -Wl,-rpath -Wl,/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/hwloc-2.6.0-lpwf3cll7rfzitqm3lxrqjwpzv3i6mgv/lib -Wl,-rpath -Wl,/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/libevent-2.1.12-bptp6h52a5ozibm2junkvu3ttgcujl2i/lib -Wl,-rpath -Wl,/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/zlib-1.2.11-un5j7szis72ayqdk4yzjlp6vkjrcbtn7/lib -Wl,-rpath -Wl,/usr/local/spack/opt/spack/linux -Wl,-rpath -Wl,/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/openmpi-4.1.1-ltmwwysjjowof4zsojcmq54r5qqzgty6/lib -L/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/hwloc-2.6.0-lpwf3cll7rfzitqm3lxrqjwpzv3i6mgv/lib -L/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/libevent-2.1.12-bptp6h52a5ozibm2junkvu3ttgcujl2i/lib -L/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/zlib-1.2.11-un5j7szis72ayqdk4yzjlp6vkjrcbtn7/lib -L/usr/local/spack/opt/spack/linux -pthread CMakeFiles/cmTC_e990e.dir/test_mpi.cpp.o -o cmTC_e990e  -Wl,-rpath,/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/openmpi-4.1.1-ltmwwysjjowof4zsojcmq54r5qqzgty6/lib /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/openmpi-4.1.1-ltmwwysjjowof4zsojcmq54r5qqzgty6/lib/libmpi.so 
+        gmake[1]: Leaving directory '/home1/mberkland2023/repos/vpic-kokkos/build/CMakeFiles/CMakeScratch/TryCompile-Vzw3Am'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cmake-3.27.9-diliyi6mvc2vlwxymv4hbpu5s4bf6prb/share/cmake-3.27/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cmake-3.27.9-diliyi6mvc2vlwxymv4hbpu5s4bf6prb/share/cmake-3.27/Modules/FindMPI.cmake:1672 (_MPI_try_staged_settings)"
+      - "CMakeLists.txt:34 (find_package)"
+    description: "The MPI test test_mpi for CXX in mode MPICXX"
+    directories:
+      source: "/home1/mberkland2023/repos/vpic-kokkos/build/CMakeFiles/CMakeScratch/TryCompile-O8lvwp"
+      binary: "/home1/mberkland2023/repos/vpic-kokkos/build/CMakeFiles/CMakeScratch/TryCompile-O8lvwp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-rdynamic"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "MPI_RESULT_CXX_test_mpi_MPICXX"
+      cached: true
+      stdout: |
+        Change Dir: '/home1/mberkland2023/repos/vpic-kokkos/build/CMakeFiles/CMakeScratch/TryCompile-O8lvwp'
+        
+        Run Build Command(s): /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cmake-3.27.9-diliyi6mvc2vlwxymv4hbpu5s4bf6prb/bin/cmake -E env VERBOSE=1 /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/gmake-4.4.1-uzwq3guww5xehopkcxw6ywjluksqk5c6/bin/gmake -f Makefile cmTC_f385f/fast
+        /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/gmake-4.4.1-uzwq3guww5xehopkcxw6ywjluksqk5c6/bin/gmake  -f CMakeFiles/cmTC_f385f.dir/build.make CMakeFiles/cmTC_f385f.dir/build
+        gmake[1]: Entering directory '/home1/mberkland2023/repos/vpic-kokkos/build/CMakeFiles/CMakeScratch/TryCompile-O8lvwp'
+        Building CXX object CMakeFiles/cmTC_f385f.dir/test_mpi.cpp.o
+        /home1/mberkland2023/repos/vpic-kokkos/kokkos/bin/nvcc_wrapper  -isystem /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/openmpi-4.1.1-ltmwwysjjowof4zsojcmq54r5qqzgty6/include -rdynamic  -std=gnu++17 -pthread -o CMakeFiles/cmTC_f385f.dir/test_mpi.cpp.o -c /home1/mberkland2023/repos/vpic-kokkos/build/CMakeFiles/CMakeScratch/TryCompile-O8lvwp/test_mpi.cpp
+        nvcc_wrapper has been given GNU extension standard flag -std=gnu++17 - reverting flag to -std=c++17
+        Linking CXX executable cmTC_f385f
+        /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cmake-3.27.9-diliyi6mvc2vlwxymv4hbpu5s4bf6prb/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f385f.dir/link.txt --verbose=1
+        /home1/mberkland2023/repos/vpic-kokkos/kokkos/bin/nvcc_wrapper -rdynamic  -Wl,-rpath -Wl,/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/hwloc-2.6.0-lpwf3cll7rfzitqm3lxrqjwpzv3i6mgv/lib -Wl,-rpath -Wl,/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/libevent-2.1.12-bptp6h52a5ozibm2junkvu3ttgcujl2i/lib -Wl,-rpath -Wl,/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/zlib-1.2.11-un5j7szis72ayqdk4yzjlp6vkjrcbtn7/lib -Wl,-rpath -Wl,/usr/local/spack/opt/spack/linux -Wl,-rpath -Wl,/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/openmpi-4.1.1-ltmwwysjjowof4zsojcmq54r5qqzgty6/lib -L/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/hwloc-2.6.0-lpwf3cll7rfzitqm3lxrqjwpzv3i6mgv/lib -L/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/libevent-2.1.12-bptp6h52a5ozibm2junkvu3ttgcujl2i/lib -L/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/zlib-1.2.11-un5j7szis72ayqdk4yzjlp6vkjrcbtn7/lib -L/usr/local/spack/opt/spack/linux -pthread CMakeFiles/cmTC_f385f.dir/test_mpi.cpp.o -o cmTC_f385f  -Wl,-rpath,/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/openmpi-4.1.1-ltmwwysjjowof4zsojcmq54r5qqzgty6/lib /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/openmpi-4.1.1-ltmwwysjjowof4zsojcmq54r5qqzgty6/lib/libmpi.so 
+        gmake[1]: Leaving directory '/home1/mberkland2023/repos/vpic-kokkos/build/CMakeFiles/CMakeScratch/TryCompile-O8lvwp'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cmake-3.27.9-diliyi6mvc2vlwxymv4hbpu5s4bf6prb/share/cmake-3.27/Modules/FindOpenMP.cmake:219 (try_compile)"
+      - "/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cmake-3.27.9-diliyi6mvc2vlwxymv4hbpu5s4bf6prb/share/cmake-3.27/Modules/FindOpenMP.cmake:485 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:125 (find_package)"
+    description: "Detecting CXX OpenMP compiler info"
+    directories:
+      source: "/home1/mberkland2023/repos/vpic-kokkos/build/CMakeFiles/CMakeScratch/TryCompile-ngYXoo"
+      binary: "/home1/mberkland2023/repos/vpic-kokkos/build/CMakeFiles/CMakeScratch/TryCompile-ngYXoo"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-rdynamic"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home1/mberkland2023/repos/vpic-kokkos"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CXX_fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/home1/mberkland2023/repos/vpic-kokkos/build/CMakeFiles/CMakeScratch/TryCompile-ngYXoo'
+        
+        Run Build Command(s): /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cmake-3.27.9-diliyi6mvc2vlwxymv4hbpu5s4bf6prb/bin/cmake -E env VERBOSE=1 /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/gmake-4.4.1-uzwq3guww5xehopkcxw6ywjluksqk5c6/bin/gmake -f Makefile cmTC_e120c/fast
+        /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/gmake-4.4.1-uzwq3guww5xehopkcxw6ywjluksqk5c6/bin/gmake  -f CMakeFiles/cmTC_e120c.dir/build.make CMakeFiles/cmTC_e120c.dir/build
+        gmake[1]: Entering directory '/home1/mberkland2023/repos/vpic-kokkos/build/CMakeFiles/CMakeScratch/TryCompile-ngYXoo'
+        Building CXX object CMakeFiles/cmTC_e120c.dir/OpenMPTryFlag.cpp.o
+        /home1/mberkland2023/repos/vpic-kokkos/kokkos/bin/nvcc_wrapper   -rdynamic -fopenmp -v -std=gnu++17 -o CMakeFiles/cmTC_e120c.dir/OpenMPTryFlag.cpp.o -c /home1/mberkland2023/repos/vpic-kokkos/build/CMakeFiles/CMakeScratch/TryCompile-ngYXoo/OpenMPTryFlag.cpp
+        nvcc_wrapper has been given GNU extension standard flag -std=gnu++17 - reverting flag to -std=c++17
+        Using built-in specs.
+        COLLECT_GCC=g++
+        OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+        Thread model: posix
+        gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
+        COLLECT_GCC_OPTIONS='-std=c++17' '-D' '__CUDA_ARCH_LIST__=700' '-E' '-D' '__CUDACC__' '-D' '__NVCC__' '-rdynamic' '-fopenmp' '-v' '-I' '/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=3' '-D' '__CUDACC_VER_BUILD__=52' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=3' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_002d9a50_00000000-5_OpenMPTryFlag.cpp4.ii' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
+         /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -E -quiet -v -I /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include -imultiarch x86_64-linux-gnu -D_GNU_SOURCE -D_REENTRANT -D __CUDA_ARCH_LIST__=700 -D __CUDACC__ -D __NVCC__ -D __CUDACC_VER_MAJOR__=12 -D __CUDACC_VER_MINOR__=3 -D __CUDACC_VER_BUILD__=52 -D __CUDA_API_VER_MAJOR__=12 -D __CUDA_API_VER_MINOR__=3 -D __NVCC_DIAG_PRAGMA_SUPPORT__=1 -include cuda_runtime.h /home1/mberkland2023/repos/vpic-kokkos/build/CMakeFiles/CMakeScratch/TryCompile-ngYXoo/OpenMPTryFlag.cpp -o /tmp/tmpxft_002d9a50_00000000-5_OpenMPTryFlag.cpp4.ii -m64 -mtune=generic -march=x86-64 -std=c++17 -fopenmp -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection
+        ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/9"
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include
+         /usr/include/c++/9
+         /usr/include/x86_64-linux-gnu/c++/9
+         /usr/include/c++/9/backward
+         /usr/lib/gcc/x86_64-linux-gnu/9/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-std=c++17' '-D' '__CUDA_ARCH_LIST__=700' '-E' '-D' '__CUDACC__' '-D' '__NVCC__' '-rdynamic' '-fopenmp' '-v' '-I' '/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=3' '-D' '__CUDACC_VER_BUILD__=52' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=3' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_002d9a50_00000000-5_OpenMPTryFlag.cpp4.ii' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
+        Using built-in specs.
+        COLLECT_GCC=g++
+        OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+        Thread model: posix
+        gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
+        COLLECT_GCC_OPTIONS='-std=c++17' '-D' '__CUDA_ARCH__=700' '-D' '__CUDA_ARCH_LIST__=700' '-E' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-D' '__CUDACC__' '-D' '__NVCC__' '-rdynamic' '-fopenmp' '-v' '-I' '/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=3' '-D' '__CUDACC_VER_BUILD__=52' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=3' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_002d9a50_00000000-7_OpenMPTryFlag.cpp1.ii' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
+         /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -E -quiet -v -I /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include -imultiarch x86_64-linux-gnu -D_GNU_SOURCE -D_REENTRANT -D __CUDA_ARCH__=700 -D __CUDA_ARCH_LIST__=700 -D CUDA_DOUBLE_MATH_FUNCTIONS -D __CUDACC__ -D __NVCC__ -D __CUDACC_VER_MAJOR__=12 -D __CUDACC_VER_MINOR__=3 -D __CUDACC_VER_BUILD__=52 -D __CUDA_API_VER_MAJOR__=12 -D __CUDA_API_VER_MINOR__=3 -D __NVCC_DIAG_PRAGMA_SUPPORT__=1 -include cuda_runtime.h /home1/mberkland2023/repos/vpic-kokkos/build/CMakeFiles/CMakeScratch/TryCompile-ngYXoo/OpenMPTryFlag.cpp -o /tmp/tmpxft_002d9a50_00000000-7_OpenMPTryFlag.cpp1.ii -m64 -mtune=generic -march=x86-64 -std=c++17 -fopenmp -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection
+        ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/9"
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include
+         /usr/include/c++/9
+         /usr/include/x86_64-linux-gnu/c++/9
+         /usr/include/c++/9/backward
+         /usr/lib/gcc/x86_64-linux-gnu/9/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-std=c++17' '-D' '__CUDA_ARCH__=700' '-D' '__CUDA_ARCH_LIST__=700' '-E' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-D' '__CUDACC__' '-D' '__NVCC__' '-rdynamic' '-fopenmp' '-v' '-I' '/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=3' '-D' '__CUDACC_VER_BUILD__=52' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=3' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_002d9a50_00000000-7_OpenMPTryFlag.cpp1.ii' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
+        Using built-in specs.
+        COLLECT_GCC=g++
+        OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+        Thread model: posix
+        gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
+        COLLECT_GCC_OPTIONS='-std=c++17' '-D' '__CUDA_ARCH__=700' '-D' '__CUDA_ARCH_LIST__=700' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-rdynamic' '-fopenmp' '-v' '-I' '/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_e120c.dir/OpenMPTryFlag.cpp.o' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
+         /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -I /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include -imultiarch x86_64-linux-gnu -D_GNU_SOURCE -D_REENTRANT -D __CUDA_ARCH__=700 -D __CUDA_ARCH_LIST__=700 -D CUDA_DOUBLE_MATH_FUNCTIONS /tmp/tmpxft_002d9a50_00000000-6_OpenMPTryFlag.cudafe1.cpp -quiet -dumpbase tmpxft_002d9a50_00000000-6_OpenMPTryFlag.cudafe1.cpp -m64 -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_e120c.dir/OpenMPTryFlag.cpp.o -std=c++17 -version -fopenmp -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccF3ZkfU.s
+        GNU C++17 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/9"
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include
+         /usr/include/c++/9
+         /usr/include/x86_64-linux-gnu/c++/9
+         /usr/include/c++/9/backward
+         /usr/lib/gcc/x86_64-linux-gnu/9/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        GNU C++17 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 3d1eba838554fa2348dba760e4770469
+        COLLECT_GCC_OPTIONS='-std=c++17' '-D' '__CUDA_ARCH__=700' '-D' '__CUDA_ARCH_LIST__=700' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-rdynamic' '-fopenmp' '-v' '-I' '/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_e120c.dir/OpenMPTryFlag.cpp.o' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
+         as -v -I /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include --64 -o CMakeFiles/cmTC_e120c.dir/OpenMPTryFlag.cpp.o /tmp/ccF3ZkfU.s
+        GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34
+        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-std=c++17' '-D' '__CUDA_ARCH__=700' '-D' '__CUDA_ARCH_LIST__=700' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-rdynamic' '-fopenmp' '-v' '-I' '/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_e120c.dir/OpenMPTryFlag.cpp.o' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
+        Linking CXX executable cmTC_e120c
+        /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cmake-3.27.9-diliyi6mvc2vlwxymv4hbpu5s4bf6prb/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e120c.dir/link.txt --verbose=1
+        /home1/mberkland2023/repos/vpic-kokkos/kokkos/bin/nvcc_wrapper -rdynamic -fopenmp -v CMakeFiles/cmTC_e120c.dir/OpenMPTryFlag.cpp.o -o cmTC_e120c  -v 
+        Using built-in specs.
+        COLLECT_GCC=g++
+        OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+        Thread model: posix
+        gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
+        COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH_LIST__=700' '-c' '-D' 'FATBINFILE="/tmp/tmpxft_002d9a67_00000000-4_cmTC_e120c_dlink.fatbin.c"' '-D' 'REGISTERLINKBINARYFILE="/tmp/tmpxft_002d9a67_00000000-3_cmTC_e120c_dlink.reg.c"' '-I' '.' '-D' '__NV_EXTRA_INITIALIZATION=' '-D' '__NV_EXTRA_FINALIZATION=' '-D' '__CUDA_INCLUDE_COMPILER_INTERNAL_HEADERS__' '-rdynamic' '-fopenmp' '-v' '-v' '-I' '/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=3' '-D' '__CUDACC_VER_BUILD__=52' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=3' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-m64' '-o' '/tmp/tmpxft_002d9a67_00000000-6_cmTC_e120c_dlink.o' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
+         /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -v -I . -I /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include -imultiarch x86_64-linux-gnu -D_GNU_SOURCE -D_REENTRANT -D __CUDA_ARCH_LIST__=700 -D FATBINFILE="/tmp/tmpxft_002d9a67_00000000-4_cmTC_e120c_dlink.fatbin.c" -D REGISTERLINKBINARYFILE="/tmp/tmpxft_002d9a67_00000000-3_cmTC_e120c_dlink.reg.c" -D __NV_EXTRA_INITIALIZATION= -D __NV_EXTRA_FINALIZATION= -D __CUDA_INCLUDE_COMPILER_INTERNAL_HEADERS__ -D __CUDACC_VER_MAJOR__=12 -D __CUDACC_VER_MINOR__=3 -D __CUDACC_VER_BUILD__=52 -D __CUDA_API_VER_MAJOR__=12 -D __CUDA_API_VER_MINOR__=3 -D __NVCC_DIAG_PRAGMA_SUPPORT__=1 /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/crt/link.stub -quiet -dumpbase link.stub -m64 -mtune=generic -march=x86-64 -auxbase-strip /tmp/tmpxft_002d9a67_00000000-6_cmTC_e120c_dlink.o -version -fopenmp -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccGhhFy3.s
+        GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/9"
+        ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         .
+         /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include
+         /usr/include/c++/9
+         /usr/include/x86_64-linux-gnu/c++/9
+         /usr/include/c++/9/backward
+         /usr/lib/gcc/x86_64-linux-gnu/9/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)
+        	compiled by GNU C version 9.4.0, GMP version 6.2.0, MPFR version 4.0.2, MPC version 1.1.0, isl version isl-0.22.1-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 3d1eba838554fa2348dba760e4770469
+        COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH_LIST__=700' '-c' '-D' 'FATBINFILE="/tmp/tmpxft_002d9a67_00000000-4_cmTC_e120c_dlink.fatbin.c"' '-D' 'REGISTERLINKBINARYFILE="/tmp/tmpxft_002d9a67_00000000-3_cmTC_e120c_dlink.reg.c"' '-I' '.' '-D' '__NV_EXTRA_INITIALIZATION=' '-D' '__NV_EXTRA_FINALIZATION=' '-D' '__CUDA_INCLUDE_COMPILER_INTERNAL_HEADERS__' '-rdynamic' '-fopenmp' '-v' '-v' '-I' '/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=3' '-D' '__CUDACC_VER_BUILD__=52' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=3' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-m64' '-o' '/tmp/tmpxft_002d9a67_00000000-6_cmTC_e120c_dlink.o' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
+         as -v -v -I . -I /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include --64 -o /tmp/tmpxft_002d9a67_00000000-6_cmTC_e120c_dlink.o /tmp/ccGhhFy3.s
+        GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34
+        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH_LIST__=700' '-c' '-D' 'FATBINFILE="/tmp/tmpxft_002d9a67_00000000-4_cmTC_e120c_dlink.fatbin.c"' '-D' 'REGISTERLINKBINARYFILE="/tmp/tmpxft_002d9a67_00000000-3_cmTC_e120c_dlink.reg.c"' '-I' '.' '-D' '__NV_EXTRA_INITIALIZATION=' '-D' '__NV_EXTRA_FINALIZATION=' '-D' '__CUDA_INCLUDE_COMPILER_INTERNAL_HEADERS__' '-rdynamic' '-fopenmp' '-v' '-v' '-I' '/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=3' '-D' '__CUDACC_VER_BUILD__=52' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=3' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-m64' '-o' '/tmp/tmpxft_002d9a67_00000000-6_cmTC_e120c_dlink.o' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
+        Using built-in specs.
+        COLLECT_GCC=g++
+        COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper
+        OFFLOAD_TARGET_NAMES=nvptx-none:hsa
+        OFFLOAD_TARGET_DEFAULT=1
+        Target: x86_64-linux-gnu
+        Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr,hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+        Thread model: posix
+        gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) 
+        COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/
+        LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/
+        Reading specs from /usr/lib/gcc/x86_64-linux-gnu/9/libgomp.spec
+        COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH_LIST__=700' '-rdynamic' '-fopenmp' '-v' '-v' '-m64' '-L/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/lib/stubs' '-L/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/lib' '-o' 'cmTC_e120c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
+         /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccS4RIxe.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_e120c /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o /usr/lib/gcc/x86_64-linux-gnu/9/crtoffloadbegin.o -L/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/lib/stubs -L/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/lib -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. --start-group /tmp/tmpxft_002d9a67_00000000-6_cmTC_e120c_dlink.o CMakeFiles/cmTC_e120c.dir/OpenMPTryFlag.cpp.o -lcudadevrt -lcudart_static -lrt -lpthread -ldl --end-group -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o /usr/lib/gcc/x86_64-linux-gnu/9/crtoffloadend.o
+        COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH_LIST__=700' '-rdynamic' '-fopenmp' '-v' '-v' '-m64' '-L/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/lib/stubs' '-L/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/lib' '-o' 'cmTC_e120c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread'
+        gmake[1]: Leaving directory '/home1/mberkland2023/repos/vpic-kokkos/build/CMakeFiles/CMakeScratch/TryCompile-ngYXoo'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cmake-3.27.9-diliyi6mvc2vlwxymv4hbpu5s4bf6prb/share/cmake-3.27/Modules/FindOpenMP.cmake:262 (message)"
+      - "/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cmake-3.27.9-diliyi6mvc2vlwxymv4hbpu5s4bf6prb/share/cmake-3.27/Modules/FindOpenMP.cmake:485 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:125 (find_package)"
+    message: |
+      Parsed CXX OpenMP implicit link information from above output:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home1/mberkland2023/repos/vpic-kokkos/build/CMakeFiles/CMakeScratch/TryCompile-ngYXoo']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cmake-3.27.9-diliyi6mvc2vlwxymv4hbpu5s4bf6prb/bin/cmake -E env VERBOSE=1 /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/gmake-4.4.1-uzwq3guww5xehopkcxw6ywjluksqk5c6/bin/gmake -f Makefile cmTC_e120c/fast]
+        ignore line: [/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/gmake-4.4.1-uzwq3guww5xehopkcxw6ywjluksqk5c6/bin/gmake  -f CMakeFiles/cmTC_e120c.dir/build.make CMakeFiles/cmTC_e120c.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home1/mberkland2023/repos/vpic-kokkos/build/CMakeFiles/CMakeScratch/TryCompile-ngYXoo']
+        ignore line: [Building CXX object CMakeFiles/cmTC_e120c.dir/OpenMPTryFlag.cpp.o]
+        ignore line: [/home1/mberkland2023/repos/vpic-kokkos/kokkos/bin/nvcc_wrapper   -rdynamic -fopenmp -v -std=gnu++17 -o CMakeFiles/cmTC_e120c.dir/OpenMPTryFlag.cpp.o -c /home1/mberkland2023/repos/vpic-kokkos/build/CMakeFiles/CMakeScratch/TryCompile-ngYXoo/OpenMPTryFlag.cpp]
+        ignore line: [nvcc_wrapper has been given GNU extension standard flag -std=gnu++17 - reverting flag to -std=c++17]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=g++]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-std=c++17' '-D' '__CUDA_ARCH_LIST__=700' '-E' '-D' '__CUDACC__' '-D' '__NVCC__' '-rdynamic' '-fopenmp' '-v' '-I' '/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=3' '-D' '__CUDACC_VER_BUILD__=52' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=3' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_002d9a50_00000000-5_OpenMPTryFlag.cpp4.ii' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -E -quiet -v -I /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include -imultiarch x86_64-linux-gnu -D_GNU_SOURCE -D_REENTRANT -D __CUDA_ARCH_LIST__=700 -D __CUDACC__ -D __NVCC__ -D __CUDACC_VER_MAJOR__=12 -D __CUDACC_VER_MINOR__=3 -D __CUDACC_VER_BUILD__=52 -D __CUDA_API_VER_MAJOR__=12 -D __CUDA_API_VER_MINOR__=3 -D __NVCC_DIAG_PRAGMA_SUPPORT__=1 -include cuda_runtime.h /home1/mberkland2023/repos/vpic-kokkos/build/CMakeFiles/CMakeScratch/TryCompile-ngYXoo/OpenMPTryFlag.cpp -o /tmp/tmpxft_002d9a50_00000000-5_OpenMPTryFlag.cpp4.ii -m64 -mtune=generic -march=x86-64 -std=c++17 -fopenmp -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection]
+        ignore line: [ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/9"]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include]
+        ignore line: [ /usr/include/c++/9]
+        ignore line: [ /usr/include/x86_64-linux-gnu/c++/9]
+        ignore line: [ /usr/include/c++/9/backward]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-std=c++17' '-D' '__CUDA_ARCH_LIST__=700' '-E' '-D' '__CUDACC__' '-D' '__NVCC__' '-rdynamic' '-fopenmp' '-v' '-I' '/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=3' '-D' '__CUDACC_VER_BUILD__=52' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=3' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_002d9a50_00000000-5_OpenMPTryFlag.cpp4.ii' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread']
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=g++]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-std=c++17' '-D' '__CUDA_ARCH__=700' '-D' '__CUDA_ARCH_LIST__=700' '-E' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-D' '__CUDACC__' '-D' '__NVCC__' '-rdynamic' '-fopenmp' '-v' '-I' '/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=3' '-D' '__CUDACC_VER_BUILD__=52' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=3' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_002d9a50_00000000-7_OpenMPTryFlag.cpp1.ii' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -E -quiet -v -I /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include -imultiarch x86_64-linux-gnu -D_GNU_SOURCE -D_REENTRANT -D __CUDA_ARCH__=700 -D __CUDA_ARCH_LIST__=700 -D CUDA_DOUBLE_MATH_FUNCTIONS -D __CUDACC__ -D __NVCC__ -D __CUDACC_VER_MAJOR__=12 -D __CUDACC_VER_MINOR__=3 -D __CUDACC_VER_BUILD__=52 -D __CUDA_API_VER_MAJOR__=12 -D __CUDA_API_VER_MINOR__=3 -D __NVCC_DIAG_PRAGMA_SUPPORT__=1 -include cuda_runtime.h /home1/mberkland2023/repos/vpic-kokkos/build/CMakeFiles/CMakeScratch/TryCompile-ngYXoo/OpenMPTryFlag.cpp -o /tmp/tmpxft_002d9a50_00000000-7_OpenMPTryFlag.cpp1.ii -m64 -mtune=generic -march=x86-64 -std=c++17 -fopenmp -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection]
+        ignore line: [ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/9"]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include]
+        ignore line: [ /usr/include/c++/9]
+        ignore line: [ /usr/include/x86_64-linux-gnu/c++/9]
+        ignore line: [ /usr/include/c++/9/backward]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-std=c++17' '-D' '__CUDA_ARCH__=700' '-D' '__CUDA_ARCH_LIST__=700' '-E' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-D' '__CUDACC__' '-D' '__NVCC__' '-rdynamic' '-fopenmp' '-v' '-I' '/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=3' '-D' '__CUDACC_VER_BUILD__=52' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=3' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-include' 'cuda_runtime.h' '-m64' '-o' '/tmp/tmpxft_002d9a50_00000000-7_OpenMPTryFlag.cpp1.ii' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread']
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=g++]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-std=c++17' '-D' '__CUDA_ARCH__=700' '-D' '__CUDA_ARCH_LIST__=700' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-rdynamic' '-fopenmp' '-v' '-I' '/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_e120c.dir/OpenMPTryFlag.cpp.o' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -I /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include -imultiarch x86_64-linux-gnu -D_GNU_SOURCE -D_REENTRANT -D __CUDA_ARCH__=700 -D __CUDA_ARCH_LIST__=700 -D CUDA_DOUBLE_MATH_FUNCTIONS /tmp/tmpxft_002d9a50_00000000-6_OpenMPTryFlag.cudafe1.cpp -quiet -dumpbase tmpxft_002d9a50_00000000-6_OpenMPTryFlag.cudafe1.cpp -m64 -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_e120c.dir/OpenMPTryFlag.cpp.o -std=c++17 -version -fopenmp -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccF3ZkfU.s]
+        ignore line: [GNU C++17 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/9"]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include]
+        ignore line: [ /usr/include/c++/9]
+        ignore line: [ /usr/include/x86_64-linux-gnu/c++/9]
+        ignore line: [ /usr/include/c++/9/backward]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C++17 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 3d1eba838554fa2348dba760e4770469]
+        ignore line: [COLLECT_GCC_OPTIONS='-std=c++17' '-D' '__CUDA_ARCH__=700' '-D' '__CUDA_ARCH_LIST__=700' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-rdynamic' '-fopenmp' '-v' '-I' '/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_e120c.dir/OpenMPTryFlag.cpp.o' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread']
+        ignore line: [ as -v -I /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include --64 -o CMakeFiles/cmTC_e120c.dir/OpenMPTryFlag.cpp.o /tmp/ccF3ZkfU.s]
+        ignore line: [GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-std=c++17' '-D' '__CUDA_ARCH__=700' '-D' '__CUDA_ARCH_LIST__=700' '-c' '-D' 'CUDA_DOUBLE_MATH_FUNCTIONS' '-rdynamic' '-fopenmp' '-v' '-I' '/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include' '-m64' '-o' 'CMakeFiles/cmTC_e120c.dir/OpenMPTryFlag.cpp.o' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread']
+        ignore line: [Linking CXX executable cmTC_e120c]
+        ignore line: [/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cmake-3.27.9-diliyi6mvc2vlwxymv4hbpu5s4bf6prb/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e120c.dir/link.txt --verbose=1]
+        ignore line: [/home1/mberkland2023/repos/vpic-kokkos/kokkos/bin/nvcc_wrapper -rdynamic -fopenmp -v CMakeFiles/cmTC_e120c.dir/OpenMPTryFlag.cpp.o -o cmTC_e120c  -v ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=g++]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH_LIST__=700' '-c' '-D' 'FATBINFILE="/tmp/tmpxft_002d9a67_00000000-4_cmTC_e120c_dlink.fatbin.c"' '-D' 'REGISTERLINKBINARYFILE="/tmp/tmpxft_002d9a67_00000000-3_cmTC_e120c_dlink.reg.c"' '-I' '.' '-D' '__NV_EXTRA_INITIALIZATION=' '-D' '__NV_EXTRA_FINALIZATION=' '-D' '__CUDA_INCLUDE_COMPILER_INTERNAL_HEADERS__' '-rdynamic' '-fopenmp' '-v' '-v' '-I' '/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=3' '-D' '__CUDACC_VER_BUILD__=52' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=3' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-m64' '-o' '/tmp/tmpxft_002d9a67_00000000-6_cmTC_e120c_dlink.o' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread']
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/cc1plus -quiet -v -v -I . -I /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include -imultiarch x86_64-linux-gnu -D_GNU_SOURCE -D_REENTRANT -D __CUDA_ARCH_LIST__=700 -D FATBINFILE="/tmp/tmpxft_002d9a67_00000000-4_cmTC_e120c_dlink.fatbin.c" -D REGISTERLINKBINARYFILE="/tmp/tmpxft_002d9a67_00000000-3_cmTC_e120c_dlink.reg.c" -D __NV_EXTRA_INITIALIZATION= -D __NV_EXTRA_FINALIZATION= -D __CUDA_INCLUDE_COMPILER_INTERNAL_HEADERS__ -D __CUDACC_VER_MAJOR__=12 -D __CUDACC_VER_MINOR__=3 -D __CUDACC_VER_BUILD__=52 -D __CUDA_API_VER_MAJOR__=12 -D __CUDA_API_VER_MINOR__=3 -D __NVCC_DIAG_PRAGMA_SUPPORT__=1 /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/crt/link.stub -quiet -dumpbase link.stub -m64 -mtune=generic -march=x86-64 -auxbase-strip /tmp/tmpxft_002d9a67_00000000-6_cmTC_e120c_dlink.o -version -fopenmp -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccGhhFy3.s]
+        ignore line: [GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/9"]
+        ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/include-fixed"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/9/../../../../x86_64-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ .]
+        ignore line: [ /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include]
+        ignore line: [ /usr/include/c++/9]
+        ignore line: [ /usr/include/x86_64-linux-gnu/c++/9]
+        ignore line: [ /usr/include/c++/9/backward]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/9/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C++14 (Ubuntu 9.4.0-1ubuntu1~20.04.2) version 9.4.0 (x86_64-linux-gnu)]
+        ignore line: [	compiled by GNU C version 9.4.0  GMP version 6.2.0  MPFR version 4.0.2  MPC version 1.1.0  isl version isl-0.22.1-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 3d1eba838554fa2348dba760e4770469]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH_LIST__=700' '-c' '-D' 'FATBINFILE="/tmp/tmpxft_002d9a67_00000000-4_cmTC_e120c_dlink.fatbin.c"' '-D' 'REGISTERLINKBINARYFILE="/tmp/tmpxft_002d9a67_00000000-3_cmTC_e120c_dlink.reg.c"' '-I' '.' '-D' '__NV_EXTRA_INITIALIZATION=' '-D' '__NV_EXTRA_FINALIZATION=' '-D' '__CUDA_INCLUDE_COMPILER_INTERNAL_HEADERS__' '-rdynamic' '-fopenmp' '-v' '-v' '-I' '/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=3' '-D' '__CUDACC_VER_BUILD__=52' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=3' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-m64' '-o' '/tmp/tmpxft_002d9a67_00000000-6_cmTC_e120c_dlink.o' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread']
+        ignore line: [ as -v -v -I . -I /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include --64 -o /tmp/tmpxft_002d9a67_00000000-6_cmTC_e120c_dlink.o /tmp/ccGhhFy3.s]
+        ignore line: [GNU assembler version 2.34 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.34]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH_LIST__=700' '-c' '-D' 'FATBINFILE="/tmp/tmpxft_002d9a67_00000000-4_cmTC_e120c_dlink.fatbin.c"' '-D' 'REGISTERLINKBINARYFILE="/tmp/tmpxft_002d9a67_00000000-3_cmTC_e120c_dlink.reg.c"' '-I' '.' '-D' '__NV_EXTRA_INITIALIZATION=' '-D' '__NV_EXTRA_FINALIZATION=' '-D' '__CUDA_INCLUDE_COMPILER_INTERNAL_HEADERS__' '-rdynamic' '-fopenmp' '-v' '-v' '-I' '/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/include' '-D' '__CUDACC_VER_MAJOR__=12' '-D' '__CUDACC_VER_MINOR__=3' '-D' '__CUDACC_VER_BUILD__=52' '-D' '__CUDA_API_VER_MAJOR__=12' '-D' '__CUDA_API_VER_MINOR__=3' '-D' '__NVCC_DIAG_PRAGMA_SUPPORT__=1' '-m64' '-o' '/tmp/tmpxft_002d9a67_00000000-6_cmTC_e120c_dlink.o' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread']
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=g++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper]
+        ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:hsa]
+        ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+        ignore line: [Target: x86_64-linux-gnu]
+        ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 9.4.0-1ubuntu1~20.04.2' --with-bugurl=file:///usr/share/doc/gcc-9/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ gm2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-9 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-9-9QDOt0/gcc-9-9.4.0/debian/tmp-nvptx/usr hsa --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [gcc version 9.4.0 (Ubuntu 9.4.0-1ubuntu1~20.04.2) ]
+        ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/9/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/9/../../../:/lib/:/usr/lib/]
+        ignore line: [Reading specs from /usr/lib/gcc/x86_64-linux-gnu/9/libgomp.spec]
+        ignore line: [COLLECT_GCC_OPTIONS='-D' '__CUDA_ARCH_LIST__=700' '-rdynamic' '-fopenmp' '-v' '-v' '-m64' '-L/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/lib/stubs' '-L/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/lib' '-o' 'cmTC_e120c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-pthread']
+        link line: [ /usr/lib/gcc/x86_64-linux-gnu/9/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper -plugin-opt=-fresolution=/tmp/ccS4RIxe.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_e120c /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o /usr/lib/gcc/x86_64-linux-gnu/9/crtoffloadbegin.o -L/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/lib/stubs -L/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/lib -L/usr/lib/gcc/x86_64-linux-gnu/9 -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/9/../../.. --start-group /tmp/tmpxft_002d9a67_00000000-6_cmTC_e120c_dlink.o CMakeFiles/cmTC_e120c.dir/OpenMPTryFlag.cpp.o -lcudadevrt -lcudart_static -lrt -lpthread -ldl --end-group -lstdc++ -lm -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o /usr/lib/gcc/x86_64-linux-gnu/9/crtoffloadend.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/9/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/9/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccS4RIxe.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-export-dynamic] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_e120c] ==> ignore
+          arg [-L/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/lib/stubs] ==> dir [/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/lib/stubs]
+          arg [-L/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/lib] ==> dir [/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/9] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib] ==> dir [/lib/../lib]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..]
+          arg [--start-group] ==> ignore
+          arg [CMakeFiles/cmTC_e120c.dir/OpenMPTryFlag.cpp.o] ==> ignore
+          arg [-lcudadevrt] ==> lib [cudadevrt]
+          arg [-lcudart_static] ==> lib [cudart_static]
+          arg [-lrt] ==> lib [rt]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-ldl] ==> lib [dl]
+          arg [--end-group] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgomp] ==> lib [gomp]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+        collapse library dir [/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/lib/stubs] ==> [/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/targets/x86_64-linux/lib/stubs]
+        collapse library dir [/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/bin/../targets/x86_64-linux/lib] ==> [/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/targets/x86_64-linux/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9] ==> [/usr/lib/gcc/x86_64-linux-gnu/9]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../../../lib] ==> [/usr/lib]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib] ==> [/lib]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/9/../../..] ==> [/usr/lib]
+        implicit libs: [cudadevrt;cudart_static;rt;pthread;dl;stdc++;m;gomp;gcc_s;gcc;pthread;c;gcc_s;gcc]
+        implicit objs: []
+        implicit dirs: [/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/targets/x86_64-linux/lib/stubs;/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cuda-12.3.0-fvbwiovpqxz5iokaqjejxobnbee2mibe/targets/x86_64-linux/lib;/usr/lib/gcc/x86_64-linux-gnu/9;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cmake-3.27.9-diliyi6mvc2vlwxymv4hbpu5s4bf6prb/share/cmake-3.27/Modules/FindOpenMP.cmake:419 (try_compile)"
+      - "/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cmake-3.27.9-diliyi6mvc2vlwxymv4hbpu5s4bf6prb/share/cmake-3.27/Modules/FindOpenMP.cmake:559 (_OPENMP_GET_SPEC_DATE)"
+      - "CMakeLists.txt:125 (find_package)"
+    description: "Detecting CXX OpenMP version"
+    directories:
+      source: "/home1/mberkland2023/repos/vpic-kokkos/build/CMakeFiles/CMakeScratch/TryCompile-p6jOco"
+      binary: "/home1/mberkland2023/repos/vpic-kokkos/build/CMakeFiles/CMakeScratch/TryCompile-p6jOco"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-rdynamic"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home1/mberkland2023/repos/vpic-kokkos"
+    buildResult:
+      variable: "OpenMP_SPECTEST_CXX_"
+      cached: true
+      stdout: |
+        Change Dir: '/home1/mberkland2023/repos/vpic-kokkos/build/CMakeFiles/CMakeScratch/TryCompile-p6jOco'
+        
+        Run Build Command(s): /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cmake-3.27.9-diliyi6mvc2vlwxymv4hbpu5s4bf6prb/bin/cmake -E env VERBOSE=1 /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/gmake-4.4.1-uzwq3guww5xehopkcxw6ywjluksqk5c6/bin/gmake -f Makefile cmTC_74341/fast
+        /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/gmake-4.4.1-uzwq3guww5xehopkcxw6ywjluksqk5c6/bin/gmake  -f CMakeFiles/cmTC_74341.dir/build.make CMakeFiles/cmTC_74341.dir/build
+        gmake[1]: Entering directory '/home1/mberkland2023/repos/vpic-kokkos/build/CMakeFiles/CMakeScratch/TryCompile-p6jOco'
+        Building CXX object CMakeFiles/cmTC_74341.dir/OpenMPCheckVersion.cpp.o
+        /home1/mberkland2023/repos/vpic-kokkos/kokkos/bin/nvcc_wrapper   -rdynamic -fopenmp -std=gnu++17 -o CMakeFiles/cmTC_74341.dir/OpenMPCheckVersion.cpp.o -c /home1/mberkland2023/repos/vpic-kokkos/build/CMakeFiles/CMakeScratch/TryCompile-p6jOco/OpenMPCheckVersion.cpp
+        nvcc_wrapper has been given GNU extension standard flag -std=gnu++17 - reverting flag to -std=c++17
+        Linking CXX executable cmTC_74341
+        /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cmake-3.27.9-diliyi6mvc2vlwxymv4hbpu5s4bf6prb/bin/cmake -E cmake_link_script CMakeFiles/cmTC_74341.dir/link.txt --verbose=1
+        /home1/mberkland2023/repos/vpic-kokkos/kokkos/bin/nvcc_wrapper -rdynamic -fopenmp CMakeFiles/cmTC_74341.dir/OpenMPCheckVersion.cpp.o -o cmTC_74341 
+        gmake[1]: Leaving directory '/home1/mberkland2023/repos/vpic-kokkos/build/CMakeFiles/CMakeScratch/TryCompile-p6jOco'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "kokkos/cmake/kokkos_test_cxx_std.cmake:83 (TRY_COMPILE)"
+      - "kokkos/cmake/kokkos_tribits.cmake:243 (INCLUDE)"
+      - "kokkos/CMakeLists.txt:218 (KOKKOS_SETUP_BUILD_ENVIRONMENT)"
+    directories:
+      source: "/home1/mberkland2023/repos/vpic-kokkos/build/kokkos/corner_cases/CMakeFiles/CMakeTmp"
+      binary: "/home1/mberkland2023/repos/vpic-kokkos/build/kokkos/corner_cases/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-rdynamic -fopenmp"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home1/mberkland2023/repos/vpic-kokkos;cmake/Modules"
+    buildResult:
+      variable: "CAN_COMPILE_CPP17"
+      cached: true
+      stdout: |
+        Change Dir: '/home1/mberkland2023/repos/vpic-kokkos/build/kokkos/corner_cases/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cmake-3.27.9-diliyi6mvc2vlwxymv4hbpu5s4bf6prb/bin/cmake -E env VERBOSE=1 /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/gmake-4.4.1-uzwq3guww5xehopkcxw6ywjluksqk5c6/bin/gmake -f Makefile cmTC_441b1/fast
+        /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/gmake-4.4.1-uzwq3guww5xehopkcxw6ywjluksqk5c6/bin/gmake  -f CMakeFiles/cmTC_441b1.dir/build.make CMakeFiles/cmTC_441b1.dir/build
+        gmake[1]: Entering directory '/home1/mberkland2023/repos/vpic-kokkos/build/kokkos/corner_cases/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_441b1.dir/cplusplus17.cpp.o
+        /home1/mberkland2023/repos/vpic-kokkos/kokkos/bin/nvcc_wrapper   -rdynamic -fopenmp  -std=gnu++17 -o CMakeFiles/cmTC_441b1.dir/cplusplus17.cpp.o -c /home1/mberkland2023/repos/vpic-kokkos/kokkos/cmake/compile_tests/cplusplus17.cpp
+        nvcc_wrapper has been given GNU extension standard flag -std=gnu++17 - reverting flag to -std=c++17
+        Linking CXX executable cmTC_441b1
+        /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cmake-3.27.9-diliyi6mvc2vlwxymv4hbpu5s4bf6prb/bin/cmake -E cmake_link_script CMakeFiles/cmTC_441b1.dir/link.txt --verbose=1
+        /home1/mberkland2023/repos/vpic-kokkos/kokkos/bin/nvcc_wrapper -rdynamic -fopenmp  CMakeFiles/cmTC_441b1.dir/cplusplus17.cpp.o -o cmTC_441b1 
+        gmake[1]: Leaving directory '/home1/mberkland2023/repos/vpic-kokkos/build/kokkos/corner_cases/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cmake-3.27.9-diliyi6mvc2vlwxymv4hbpu5s4bf6prb/share/cmake-3.27/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cmake-3.27.9-diliyi6mvc2vlwxymv4hbpu5s4bf6prb/share/cmake-3.27/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cmake-3.27.9-diliyi6mvc2vlwxymv4hbpu5s4bf6prb/share/cmake-3.27/Modules/FindThreads.cmake:99 (CHECK_CXX_SOURCE_COMPILES)"
+      - "/usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cmake-3.27.9-diliyi6mvc2vlwxymv4hbpu5s4bf6prb/share/cmake-3.27/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "CMakeLists.txt:285 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home1/mberkland2023/repos/vpic-kokkos/build/CMakeFiles/CMakeScratch/TryCompile-gWhNKp"
+      binary: "/home1/mberkland2023/repos/vpic-kokkos/build/CMakeFiles/CMakeScratch/TryCompile-gWhNKp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "-rdynamic -fopenmp"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home1/mberkland2023/repos/vpic-kokkos"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home1/mberkland2023/repos/vpic-kokkos/build/CMakeFiles/CMakeScratch/TryCompile-gWhNKp'
+        
+        Run Build Command(s): /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cmake-3.27.9-diliyi6mvc2vlwxymv4hbpu5s4bf6prb/bin/cmake -E env VERBOSE=1 /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/gmake-4.4.1-uzwq3guww5xehopkcxw6ywjluksqk5c6/bin/gmake -f Makefile cmTC_16f57/fast
+        /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/gmake-4.4.1-uzwq3guww5xehopkcxw6ywjluksqk5c6/bin/gmake  -f CMakeFiles/cmTC_16f57.dir/build.make CMakeFiles/cmTC_16f57.dir/build
+        gmake[1]: Entering directory '/home1/mberkland2023/repos/vpic-kokkos/build/CMakeFiles/CMakeScratch/TryCompile-gWhNKp'
+        Building CXX object CMakeFiles/cmTC_16f57.dir/src.cxx.o
+        /home1/mberkland2023/repos/vpic-kokkos/kokkos/bin/nvcc_wrapper -DCMAKE_HAVE_LIBC_PTHREAD  -rdynamic -fopenmp  -std=gnu++17 -o CMakeFiles/cmTC_16f57.dir/src.cxx.o -c /home1/mberkland2023/repos/vpic-kokkos/build/CMakeFiles/CMakeScratch/TryCompile-gWhNKp/src.cxx
+        nvcc_wrapper has been given GNU extension standard flag -std=gnu++17 - reverting flag to -std=c++17
+        Linking CXX executable cmTC_16f57
+        /usr/local/spack/opt/spack/linux-ubuntu20.04-zen2/gcc-9.4.0/cmake-3.27.9-diliyi6mvc2vlwxymv4hbpu5s4bf6prb/bin/cmake -E cmake_link_script CMakeFiles/cmTC_16f57.dir/link.txt --verbose=1
+        /home1/mberkland2023/repos/vpic-kokkos/kokkos/bin/nvcc_wrapper -rdynamic -fopenmp  CMakeFiles/cmTC_16f57.dir/src.cxx.o -o cmTC_16f57 
+        gmake[1]: Leaving directory '/home1/mberkland2023/repos/vpic-kokkos/build/CMakeFiles/CMakeScratch/TryCompile-gWhNKp'
+        
+      exitCode: 0
+...

@@ -1,0 +1,1 @@
+-march=skylake-avx512 -mtune=skylake-avx512
