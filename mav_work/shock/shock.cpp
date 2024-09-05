@@ -23,36 +23,23 @@ begin_initialization
     // particles (position and momentum both) need to be loaded at time level 0.
 
     int input_seed;
-    double B0; // Background large scale magnetic field strength
-    double dB; // Fluctuating component of B0
-    double l;  // Coherence length of the turbulent fluctuations
     double input_mass_ratio;
 
     // Arguments can be passed from the command line to the input deck
-    if (num_cmdline_arguments != 6)
+    if (num_cmdline_arguments != 3)
     {
         // Set sensible defaults
-        B0 = 1.0;
-        dB = 0.1;
-        l = 1.0;
         input_mass_ratio = 1.0;
         input_seed = 0;
 
-        sim_log("Defaulting to background magnetic field strength of "
-                << B0 << ", fluctuation of " << dB << ", coherence length of " << l << ", mass_ratio of "
-                << input_mass_ratio << ", and seed of " << input_seed);
-        sim_log("For Custom Usage: " << cmdline_argument[0] << " B0 dB l seed");
+        sim_log("Defaulting to mass_ratio of " << input_mass_ratio << " and seed of " << input_seed);
+        sim_log("For Custom Usage: " << cmdline_argument[0] << " mass_ratio seed");
     }
     else
     {
-        // maybe remove the three lines below and just have user change the value in the code
-        B0 = atof(cmdline_argument[1]);
-        dB = atof(cmdline_argument[2]);
-        l = atof(cmdline_argument[3]);
-        input_mass_ratio = atof(cmdline_argument[4]);
-        input_seed = atof(cmdline_argument[5]);
-        sim_log("Detected input B0 of " << B0 << ", fluctuation of " << dB << ", coherence length of " << l
-                                        << ", mass_ratio of " << input_mass_ratio << ", and seed of " << input_seed);
+        input_mass_ratio = atof(cmdline_argument[1]);
+        input_seed = atof(cmdline_argument[2]);
+        sim_log("Detected input mass_ratio of " << input_mass_ratio << ", and seed of " << input_seed);
     }
     seed_entropy(input_seed);
 
@@ -71,7 +58,7 @@ begin_initialization
     double rhoi_L = 1;               // Ion thermal gyroradius / Sheet thickness
     double Ti_Te = 1;                // Ion temperature / electron temperature
     double wpe_wce = 3;              // Electron plasma freq / electron cyclotron freq
-    double theta = 0;                // Orientation of the simulation wrt current sheet
+    double theta = 0.34906585039;    // Orientation of the simulation wrt current sheet -- 20 degrees
     double taui = 100;               // Simulation wci's to run
 
     // Numerical parameters
@@ -85,6 +72,8 @@ begin_initialization
     double cfl_req = 0.99;   // How close to Courant should we try to run
     double wpedt_max = 0.36; // How big a timestep is allowed if Courant is not too restrictive
     double damp = 0.001;     // Level of radiation damping
+    double dby = 0;          // Perturbation in the y direction
+    double dbz = 0;          // Perturbation in the z direction
 
     // Derived quantities
     double mi = me * mi_me; // Ion mass
@@ -181,7 +170,7 @@ begin_initialization
     // perfect electrical conductor on the -x and +x boundaries
     set_domain_field_bc(BOUNDARY(-1, 0, 0), pec_fields);
     set_domain_field_bc(BOUNDARY(1, 0, 0), pec_fields);
-    set_domain_particle_bc(BOUNDARY(-1, 0, 0), reflect_particles);
+    set_domain_particle_bc(BOUNDARY(-1, 0, 0), absorb_particles);
     set_domain_particle_bc(BOUNDARY(1, 0, 0), reflect_particles);
 
     define_material("vacuum", 1);
@@ -274,7 +263,7 @@ begin_initialization
     sim_log("Loading fields");
 
     set_region_field(everywhere, 0, 0, 0,                             // Electric field
-                     0, -sn * b0 * tanh(x / L), cs * b0 * tanh(x / L) // Magnetic field
+                     b0*cs, dby, b0*sn+dbz // Magnetic field
     );
     // Note: everywhere is a region that encompasses the entire simulation
     // In general, regions are specied as logical equations (i.e. x>0 && x+y<2)

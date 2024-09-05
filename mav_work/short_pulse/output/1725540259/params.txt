@@ -1,0 +1,37 @@
+# Parameter file used for plotters.
+1.18119324097025572e-22   Code time to SI conversion factor
+3.54112825083459245e-14   Code length to SI conversion factor
+9.10938370150000079e-31   Code mass to SI conversion factor
+1.60217663399999989e-19   Code charge to SI conversion factor
+1.38688875000881475e-16   Time step (dt), SI
+8652   Number of steps in the entire simulation
+1.05800000000000008e-06   Laser wavelength, SI
+9.00000000000000000e+01   Ratio of electron to critical density
+3.00000000000000008e-05   Box size x, meters
+1.56664267164437529e-06   Box size y, meters
+3.00000000000000008e-05   Box size z, meters
+-1.00000000000000008e-05   Low box corner x, meters
+-7.83321335822187646e-07   Low box corner y, meters
+-1.50000000000000021e-05   Low box corner z, meters
+500   Number of cells in x
+1   Number of cells in y
+500   Number of cells in z
+2   Number of domains in x
+1   Number of domains in y
+2   Number of domains in z
+1   Grid data output stride in x
+1   Grid data output stride in y
+1   Grid data output stride in z
+400   Field interval
+50   Energies interval
+0   Tracer interval
+400   Restart interval
+0   Number of tracers per species
+0   Number of tracer species
+0   Number of variables per tracer (possibly wrong)
+1   Number of ranks
+0   Number of bins in the spectra
+-1.50000000000000021e-05   Spec max for electron, code units (gamma-1)
+-1.50000000000000021e-05   Spec max for I2, code units (gamma-1)
+1081   Spectra Interval
+0   This is my rank

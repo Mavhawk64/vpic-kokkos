@@ -31,3 +31,6 @@ mv !(output|shock.cpp|run_shock.sh) $OUTPUT_DIR
 
 # Disable extended globbing
 shopt -u extglob
+
+# Print the output directory in color
+echo -e "Files saved inside: ${OKCYAN}$OUTPUT_DIR${NC}"
